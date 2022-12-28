@@ -8,7 +8,7 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-		"publish": "electron-forge publish"
+    "publish": "electron-forge publish"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "electron": "^22.0.0"
   },
   "dependencies": {
+    "cors-anywhere": "^0.4.4",
     "electron-squirrel-startup": "^1.0.0"
   }
 }

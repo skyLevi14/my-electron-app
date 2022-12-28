@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+		<!--
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
@@ -9,14 +10,52 @@
     <meta
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
-    />
+    />-->
     <title>Hello from Electron renderer!</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/jQuery3.6.3.js"></script>
+
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-		<h2> This is a sample app for Cuatrix Consulting </h2>
-    <p id="info"></p>
+		<div class="title">
+			<h2>Hello from Electron renderer!</h2> <p>👋</p>
+		</div>
+
+		<div class="container">
+			<div class="div-inner">
+				<h1 class="text-center">Get Method</h1>
+				
+				<div class="text-center">
+					<input type="text" id="input" required>
+					<br/>
+					<button id="submit" class="submit">
+						SUBMIT
+					</button>
+					
+				</div>
+				
+				<div class='result text-center'>
+					<h3 id="myText"></h3>
+				</div>
+			</div>
+
+		
+			<div class="div-inner">
+				<h1 class="text-center">POST Method</h1>
+				
+				<div class="text-center">
+					<input type="text" id="input-post" required>
+					<br/>
+					<button id="submit-post" class="submit">SUBMIT</button>
+				</div>
+				
+				<div class='result text-center'>
+					<h3 id="myText-post"></h3>
+				</div>
+			</div>
+		</div>
+
   </body>
   <script src="./renderer.js"></script>
+	<script src="js/api.js"></script>
 </html>
